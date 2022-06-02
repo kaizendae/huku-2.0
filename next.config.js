@@ -7,6 +7,9 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['.'],
   },
+  images: {
+    domains: ['links.papareact.com', 'image/tmdb.org', 'image.tmdb.org'],
+  },
   poweredByHeader: false,
   trailingSlash: true,
   basePath: '',

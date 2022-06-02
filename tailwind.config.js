@@ -14,6 +14,9 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      screens: {
+        '3xl': '2000px',
+      },
       colors: {
         gray: {
           100: '#f7fafc',
@@ -40,5 +43,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 };
