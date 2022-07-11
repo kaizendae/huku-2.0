@@ -1,21 +1,13 @@
 import { ThumbUpIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
-import router from 'next/router';
 import React from 'react';
-// type Props = {}
 
-function Thumbnail({ movie }: any) {
+function MovieDetails({ movie }: any) {
   const BASE_URL = 'https://image.tmdb.org/t/p/original/';
   return (
-    <div
-      onClick={() => {
-        console.log('xxxxx');
-        router.push(`/movies/${movie.id}/details`);
-      }}
-      className="group cursor-pointer p-2 transition duration-200 ease-in hover:z-50 hover:scale-105"
-    >
+    <div className="group cursor-pointer p-2 transition duration-200 ease-in hover:z-50">
       <Image
-        layout="responsive"
+        // layout="responsive"
         alt={movie.poster_path}
         src={
           `${BASE_URL}${movie.poster_path || movie.backdrop_path}` ||
@@ -42,4 +34,4 @@ function Thumbnail({ movie }: any) {
   );
 }
 
-export default Thumbnail;
+export default MovieDetails;
