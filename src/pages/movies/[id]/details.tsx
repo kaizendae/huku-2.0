@@ -27,7 +27,7 @@ export async function getServerSideProps(context: any) {
     `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
     // https://api.themoviedb.org/3${requests[genre]?.url || requests.fetchTrending.url}
   ).then((res) => res.json());
-  console.log(request);
+  // console.log(request);
   return {
     props: {
       movie: request,

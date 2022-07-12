@@ -41,11 +41,12 @@ export default Index;
 
 export async function getServerSideProps(params: any) {
   // getting the movie results on the server side and feeding them to the results component
-  const { genre } = params.query;
+  const { url } = params.query;
+  const { API_KEY } = process.env;
   const request = await fetch(
     `https://api.themoviedb.org/3${
-      requests[genre]?.url || requests.fetchTrending.url
-    }`
+      url || requests.fetchTrending.url
+    }&api_key=${API_KEY}`
   ).then((res) => res.json());
   return {
     props: {

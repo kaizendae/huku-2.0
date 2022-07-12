@@ -11,10 +11,10 @@ function Nav() {
     <nav className="relative">
       <div className="absolute top-0 left-0 h-10 w-1/12 bg-gradient-to-r from-[#06202A]" />
       <div className="flex space-x-10 overflow-x-scroll whitespace-nowrap px-10 text-2xl scrollbar-hide sm:space-x-20 sm:px-20">
-        {Object.entries(requests).map(([key, { title }]) => (
+        {Object.entries(requests).map(([key, { title, url }]) => (
           <h2
             key={key}
-            onClick={() => router.replace(`/?genre=${key}`)}
+            onClick={() => router.replace(`/?url=${url}`)}
             className="cursor-pointer transition duration-100 last:pr-24 hover:scale-125 hover:text-white active:text-red-500"
           >
             {title}

@@ -9,7 +9,7 @@ function Thumbnail({ movie }: any) {
   return (
     <div
       onClick={() => {
-        console.log('xxxxx');
+        // console.log('xxxxx');
         router.push(`/movies/${movie.id}/details`);
       }}
       className="group cursor-pointer p-2 transition duration-200 ease-in hover:z-50 hover:scale-105"
