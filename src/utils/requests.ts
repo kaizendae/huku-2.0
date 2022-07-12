@@ -13,7 +13,7 @@ const requests = {
   },
   fetchComedyMovies: {
     title: 'Comedy',
-    url: `/discover/movie?with_genres=25`,
+    url: `/discover/movie?with_genres=35`,
   },
   fetchHorrorMovies: {
     title: 'Horror',
@@ -28,11 +28,15 @@ const requests = {
     url: `/discover/movie?with_genres=9648`,
   },
   fetchSciFi: {
-    title: 'Trending',
+    title: 'Science Fiction',
     url: `/discover/movie?with_genres=878`,
   },
+  fetchDocumentary: {
+    title: 'Documentary',
+    url: `/discover/movie?with_genres=99`,
+  },
   fetchWestern: {
-    title: 'Trending',
+    title: 'Western',
     url: `/discover/movie?with_genres=37`,
   },
   fetchAnimation: {
