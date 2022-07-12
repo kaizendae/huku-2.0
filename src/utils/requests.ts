@@ -21,7 +21,7 @@ const requests = {
   },
   fetchRomanceMovies: {
     title: 'Romance',
-    url: `/discover/movie?with_genres=35`,
+    url: `/discover/movie?with_genres=10749`,
   },
   fetchMystery: {
     title: 'Mystery',

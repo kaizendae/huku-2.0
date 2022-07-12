@@ -23,6 +23,7 @@ function Thumbnail({ movie }: any) {
         }
         height={330}
         width={220}
+        className="rounded shadow-lg shadow-blue-500/50"
       />
       <div className="p-2">
         <p className="max-w-md truncate"> {movie.overview} </p>
